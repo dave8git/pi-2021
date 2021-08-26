@@ -1,4 +1,6 @@
-import { dataSource } from ./data.js;
+import { dataSource } from './data.js';
+import { utils } from './utils.js';
+import { templates, select } from './settings.js';
 
 class Coffee {
   constructor() {

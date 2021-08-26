@@ -1,4 +1,4 @@
-const select = {
+export const select = {
   templateOf: {
     coffee: '#template-product',
   },
@@ -7,7 +7,7 @@ const select = {
   },
 };
 
-const templates = {
+export const templates = {
   coffeeTemplate: Handlebars.compile(
     document.querySelector(select.templateOf.coffee).innerHTML),
 };

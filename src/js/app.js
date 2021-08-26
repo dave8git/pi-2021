@@ -1,5 +1,5 @@
-import {select, templates} from '.settings.js';
-import { Coffee } from '.coffee.js';
+import { select } from './settings.js';
+
 const app = {
   initCoffee: function () {
     const thisApp = this;
