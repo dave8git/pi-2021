@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Indywidualny</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="products">
+
+</section>
+<script id="template-product" type="text/x-handlebars-template">
+        <div class="heading">
+            <p class="heading__title">Products</p>
+        </div>
+        <div class="products__section">
+            <div class="products__side--text">
+                <p class="products__side--heading">{{ sideHeading }}</p>
+                <p class="products__side--text">{{ sideText }}</p>
+                <div class="products__side--bottom">
+                    <div class="products__side--points">
+                        <p class="products__side--roast">Roasting: {{ roastingScore }}</p>
+                        <p class="products__side--intensity">Intensity: {{ intensityScore }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side-picture">
+                <img src="{{ picture }}" alt="">
+            </div>
+        </div>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+<script src="js/script.js" type="module"></script>
+</body>
+</html>
