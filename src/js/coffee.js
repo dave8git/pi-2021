@@ -3,13 +3,10 @@ import { utils } from './utils.js';
 import { templates, select } from './settings.js';
 
 class Coffee {
-  constructor() {
+  constructor(element) {
     const thisCoffee = this;
-
-    thisCoffee.render();
+    thisCoffee.render(element);
     thisCoffee.getElements();
-    thisCoffee.initActions();
-    //thisBooks.booksFilter();
   }
   getElements() {
     const thisCoffee = this;
@@ -17,7 +14,7 @@ class Coffee {
     thisCoffee.coffee = dataSource.coffee;
   }
 
-  render() {
+  render(element) {
     const thisCoffee = this;
     for (let cafe of dataSource.coffee) {
       const generatedHTML = templates.coffeTemplate(cafe);
