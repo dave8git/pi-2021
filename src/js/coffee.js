@@ -2,7 +2,7 @@ import { dataSource } from './data.js';
 import { utils } from './utils.js';
 import { templates, select } from './settings.js';
 
-class Coffee {
+export class Coffee {
   constructor(element) {
     const thisCoffee = this;
     thisCoffee.render(element);
@@ -18,14 +18,16 @@ class Coffee {
     const thisCoffee = this;
     thisCoffee.dom = {};
     thisCoffee.dom.wrapper = element;
+    console.log(thisCoffee.dom.wrapper);
     for (let cafe of dataSource.coffee) {
-      const generatedHTML = templates.coffeTemplate(cafe);
+      console.log(cafe);
+      const generatedHTML = templates.coffeeTemplate(cafe);
       thisCoffee.dom.element = utils.createDOMFromHTML(generatedHTML);
-      //thisCoffee.products = document.querySelector(select.containerOf.booklist);
+      //thisCoffee.products = document.querySelector(select.containerOf.coffee);
       thisCoffee.dom.wrapper.appendChild(thisCoffee.dom.element);
     }
   }
 }
 
-export default Coffee;
+
 

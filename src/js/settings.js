@@ -3,7 +3,7 @@ export const select = {
     coffee: '#template-product',
   },
   containerOf: {
-    booklist: '.products',
+    coffee: '.products',
   },
 };
 
