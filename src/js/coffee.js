@@ -16,11 +16,13 @@ class Coffee {
 
   render(element) {
     const thisCoffee = this;
+    thisCoffee.dom = {};
+    thisCoffee.dom.wrapper = element;
     for (let cafe of dataSource.coffee) {
       const generatedHTML = templates.coffeTemplate(cafe);
-      thisCoffee.element = utils.createDOMFromHTML(generatedHTML);
-      thisCoffee.products = document.querySelector(select.containerOf.booklist);
-      thisCoffee.products.appendChild(thisCoffee.element);
+      thisCoffee.dom.element = utils.createDOMFromHTML(generatedHTML);
+      //thisCoffee.products = document.querySelector(select.containerOf.booklist);
+      thisCoffee.dom.wrapper.appendChild(thisCoffee.dom.element);
     }
   }
 }
