@@ -1,6 +1,6 @@
 import { dataSource } from './data.js';
 import { utils } from './utils.js';
-import { templates, select } from './settings.js';
+import { templates } from './settings.js';
 
 export class Coffee {
   constructor(element) {
@@ -22,9 +22,12 @@ export class Coffee {
     for (let cafe of dataSource.coffee) {
       console.log(cafe);
       const generatedHTML = templates.coffeeTemplate(cafe);
+      //console.log('generatedHTML', generatedHTML);
       thisCoffee.dom.element = utils.createDOMFromHTML(generatedHTML);
       //thisCoffee.products = document.querySelector(select.containerOf.coffee);
-      thisCoffee.dom.wrapper.appendChild(thisCoffee.dom.element);
+      console.log(thisCoffee.dom.element);
+      //thisCoffee.dom.wrapper.appendChild(thisCoffee.dom.element);
+      thisCoffee.dom.wrapper.innerHTML += generatedHTML;
     }
   }
 }

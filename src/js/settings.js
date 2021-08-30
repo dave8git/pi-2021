@@ -8,6 +8,6 @@ export const select = {
 };
 
 export const templates = {
-  coffeeTemplate: Handlebars.compile(
-    document.querySelector(select.templateOf.coffee).innerHTML),
+  coffeeTemplate: Handlebars.compile(document.querySelector(select.templateOf.coffee).innerHTML),
 };
+
