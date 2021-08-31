@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Projekt Indywidualny</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="hero">
+      <nav class="container">
+        <div class="navbar__left logo">
+          <div>EL TIGRE</div>
+          <div>venezuela coffee beans</div>
+        </div>
+        <div class="navbar__right">
+          <div>home</div>
+          <div>products</div>
+          <div>contact</div>
+        </div>
+      </nav>
+      <div class="hero__text-center container">
+        <div>home of</div>
+        <div>original tastes</div>
+      </div>
+      <div class="hero__footer">
+        <div>discover</div>
+        <i class="far fa-arrow-alt-circle-down fa-2x"></i>
+      </div>
+    </section>
+    <section class="products">
+      <div class="heading">
+        <p class="heading__title">Products</p>
+      </div>
+    </section>
+    <section class="aboutus">
+      
+      <div class="aboutus__text">
+        <div class="aboutus__header">about us</div>
+        <div class="aboutus__column">
+
+          <div>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</div>
+          <div>Our coffees reflect us - young, wild and free. We are on the journey of new tastes...</div>
+        </div>   
+        <div class="aboutus_column2">
+          <div>Join us!</div>
+        </div>
+      </div>
+      
+    </section>
+    <script id="template-product" type="text/x-handlebars-template">
+      <div class='products__section'>
+        <div class='products__side--text'>
+          <p class='products__side--heading'>{{sideHeading}}</p>
+          <p class='products__side--text'>{{sideText}}</p>
+          <div class='products__side--bottom'>
+            <div class='products__side--points'>
+              <p class='products__side--roast'>Roasting: {{roastingScore}}</p>
+              <p class='products__side--intensity'>Intensity:
+                {{intensityScore}}</p>
+            </div>
+          </div>
+        </div>
+        <div class='side-picture'>
+          <img src='{{image}}' alt='' />
+        </div>
+      </div>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
