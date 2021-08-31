@@ -1,3 +1,30 @@
+.products {
+  width: 100%;
+  
+}
+
 .products__section {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.products__side--heading {
+  font-weight: bold;
+}
+
+// .products__side--text {
+  
+// }
+
+.products__side--text:before {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  border-bottom: solid 10px $color-main;
+  margin: 0 auto;
+  padding-top: 10px;
+  z-index: 1;
 }

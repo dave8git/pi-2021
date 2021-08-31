@@ -1,54 +1,61 @@
 .aboutus {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/images/about-us.jpg');
-    padding: 50px 200px;
-    .aboutus__text {
-        color: $color-light;
-        max-width: 700px;
-        display: flex;
-        margin: 0 auto;
-        font-size: $logo-font-lg + 2px;
-        display: flex;
-        flex-direction: column;
-    }
-    div {
-        color: $color-light;
-    }
-    .aboutus__header {
-        font-size: $hero-main-text-size - 12px;
-        font-weight: bold;
-        margin: 0 auto;
-        text-transform: uppercase;
-        color: $color-main;
-        position: relative;
-        width: 100%;
-        text-align: center;
-    }
-    .aboutus__header::after {
-        content: '';
-        width: 70%;
-        border-bottom: solid 5px $color-main;
-        margin: 0 auto;
-        padding-top: 10px;
-        z-index: 1;
-        position: absolute;
-        display: flex;
-        text-align: center;
-        padding-right: 20px; 
-        padding-left: 20px; 
-      }
+  padding: 50px 200px;
+
+  .aboutus__text {
+    color: $color-light;
+    max-width: 700px;
+    display: flex;
+    margin: 0 auto;
+    font-size: $logo-font-lg + 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div {
+    color: $color-light;
+  }
+
+  .aboutus__header {
+    font-size: $hero-main-text-size - 12px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: $color-main;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  .aboutus__header::after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 5px $color-main;
+    margin: 0 auto;
+    padding-top: 10px;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px; 
+  }
 }
 
 .aboutus__column {
-    width: 89%;
-    font-weight: bold;
-    padding-top: 40px;
+  width: 89%;
+  font-weight: bold;
+  padding-top: 40px;
+  font-style: italic;
 }
+
 .aboutus_column2 {
-    display: flex;
-    font-size: $logo-font-lg + 2px;
-    font-weight: bold;
-    width: 103%;
-    justify-content: flex-end;
+  display: flex;
+  font-size: $logo-font-lg + 2px;
+  font-weight: bold;
+  width: 103%;
+  justify-content: flex-end;
+  font-style: italic;
 }
 

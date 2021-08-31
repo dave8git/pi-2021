@@ -1,17 +1,20 @@
-import { dataSource } from './data.js';
+//import { dataSource } from './data.js';
 import { utils } from './utils.js';
 import { templates } from './settings.js';
 
 export class Coffee {
-  constructor(element) {
+  constructor(element, coffeeData) {
     const thisCoffee = this;
+    thisCoffee.coffee = coffeeData;
     thisCoffee.render(element);
     thisCoffee.getElements();
+    
   }
   getElements() {
     const thisCoffee = this;
     thisCoffee.dom = {};
-    thisCoffee.coffee = dataSource.coffee;
+    //thisCoffee.coffee = dataSource.coffee;
+     
   }
 
   render(element) {
@@ -19,7 +22,7 @@ export class Coffee {
     thisCoffee.dom = {};
     thisCoffee.dom.wrapper = element;
     console.log(thisCoffee.dom.wrapper);
-    for (let cafe of dataSource.coffee) {
+    for (let cafe of thisCoffee.coffee) {
       console.log(cafe);
       const generatedHTML = templates.coffeeTemplate(cafe);
       //console.log('generatedHTML', generatedHTML);
