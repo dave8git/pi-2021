@@ -6,8 +6,8 @@
 .products__section {
   display: flex;
   width: 80%;
-  margin: 0 auto;
-
+  margin: 50px auto;
+  
 }
 
 .products__side--heading {
@@ -27,4 +27,12 @@
   margin: 0 auto;
   padding-top: 10px;
   z-index: 1;
+}
+
+.products img {
+  width: 400px;
+}
+
+.products__picture--left {
+  flex-direction: row-reverse;
 }
