@@ -11,12 +11,17 @@
 }
 
 .products__side--heading {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 27px;
+  
 }
 
 .products__side--text {
   //margin: 30px;
   display: flex;
+  font-weight: bold;
+  font-size: 11px;
+  padding-right: 60px;
 }
 
 .products__side--text:before {
@@ -40,4 +45,23 @@
 .products__picture--left {
   flex-direction: row-reverse;
 }
+
+.products__outside--styling {
+  padding-top: 3%;
+  position: relative;
+}
+
+.products__side--points {
+  position: relative;
+}
+.products__side--points:after {
+  content: url(/images/badge.png);
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+}
+
 
