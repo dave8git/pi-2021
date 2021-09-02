@@ -2,6 +2,7 @@
     "coffee": [
         {
           "id": 1,
+          "badge-class": "badge",
           "sideHeading": "01. LA LAGARTIJA ",
           "sideText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, cum tempora iure exercitationem id excepturi odio mollitia expedita.",
           "roastingScore": "2/8",
@@ -11,6 +12,7 @@
         {
           "id": 2,
           "class": "products__picture--left",
+          "class-padding": "class-padding",
           "sideHeading": "02. EL TIGRE ",
           "sideText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, cum tempora iure exercitationem id excepturi odio mollitia expedita.",
           "roastingScore": "2/8",

@@ -31,7 +31,7 @@
   height: 5px;
   border-bottom: solid 3px $color-main;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-right: 50px;
   margin-right: 15px;
   z-index: 1;
@@ -51,17 +51,46 @@
   position: relative;
 }
 
-.products__side--points {
+.products__side--roast {
+  font-weight: bold;
+  text-transform: uppercase;
+  span {
+    color: $color-main;
+  }
+}
+
+.products__side--intensity {
+  font-weight: bold;
+  text-transform: uppercase;
+  span {
+    color: $color-main;
+  }
+}
+
+.products__side--roast {
+  padding-top: 25px;
+}
+
+.class-padding {
+  padding-left: 60px;
+}
+
+.badge {
   position: relative;
 }
-.products__side--points:after {
-  content: url(/images/badge.png);
-  width: 50px;
-  height: 50px;
+
+.badge:after {
+  content: '';
+  background-image: url(/images/badge.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
   display: block;
   position: absolute;
   top: 10px;
   left: 200px;
 }
+
+
 
 

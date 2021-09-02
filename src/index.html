@@ -31,10 +31,10 @@
       </div>
       <div class="hero__footer">
         <div>discover</div>
-        <i class="far fa-arrow-alt-circle-down fa-2x"></i>
+        <a href="#products"><i class="far fa-arrow-alt-circle-down fa-2x"></i></a>
       </div>
     </section>
-    <section class="products">
+    <section class="products" id="products">
       <div class="heading">
         <p class="heading__title">Products</p>
       </div>
@@ -51,18 +51,19 @@
         </div>
       </div>
     </section>
+    <section class="footer"> &copy 2021 El Davidos Inc.</section>
     <script id="template-product" type="text/x-handlebars-template">
       <div class='products__section {{class}}'>
-        <div class='products__outside--styling'>
+        <div class='products__outside--styling {{ class-padding }}'>
           <div class='products__side--heading'>{{sideHeading}}</div>
           <div class='products__side--text'>
             <div>{{sideText}}</div>
           </div>
           <div class='products__side--bottom'>
-            <div class='products__side--points'>
-              <div class='products__side--roast'>Roasting: {{roastingScore}}</div>
+            <div class='products__side--points {{ badge-class }}'>
+              <div class='products__side--roast'>Roasting: <span>{{roastingScore}}</span></div>
               <div class='products__side--intensity'>Intensity:
-                {{intensityScore}}</div>
+                <span>{{intensityScore}}</span></div>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@
 nav {
   display: flex;
   justify-content: space-around;
-
+  margin-top: 20px;
   .navbar__right {
     display: flex;
     color: rgb(82, 80, 80);
@@ -88,4 +88,13 @@ nav {
   i {
     padding: 20px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: $color-light;
+}
+
+a:hover {
+  color: $color-main;
 }
