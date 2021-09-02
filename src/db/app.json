@@ -10,6 +10,7 @@
         },
         {
           "id": 2,
+          "class": "products__picture--left",
           "sideHeading": "02. EL TIGRE ",
           "sideText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, cum tempora iure exercitationem id excepturi odio mollitia expedita.",
           "roastingScore": "2/8",

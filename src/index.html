@@ -50,9 +50,11 @@
     </section>
     <script id="template-product" type="text/x-handlebars-template">
       <div class='products__section {{class}}'>
-        <div class='products__side--text'>
+        <div class=''>
           <div class='products__side--heading'>{{sideHeading}}</div>
-          <div class='products__side--text'>{{sideText}}</div>
+          <div class='products__side--text'>
+            <div>{{sideText}}</div>
+          </div>
           <div class='products__side--bottom'>
             <div class='products__side--points'>
               <div class='products__side--roast'>Roasting: {{roastingScore}}</div>
