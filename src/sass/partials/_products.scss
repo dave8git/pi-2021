@@ -7,13 +7,11 @@
   display: flex;
   width: 80%;
   margin: 50px auto;
-  
 }
 
 .products__side--heading {
   font-weight: 700;
   font-size: 27px;
-  
 }
 
 .products__side--text {
@@ -54,6 +52,7 @@
 .products__side--roast {
   font-weight: bold;
   text-transform: uppercase;
+
   span {
     color: $color-main;
   }
@@ -62,6 +61,7 @@
 .products__side--intensity {
   font-weight: bold;
   text-transform: uppercase;
+
   span {
     color: $color-main;
   }
@@ -90,7 +90,3 @@
   top: 10px;
   left: 200px;
 }
-
-
-
-
